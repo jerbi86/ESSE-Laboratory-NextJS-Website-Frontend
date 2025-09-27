@@ -1,0 +1,197 @@
+{
+  "data": [
+    {
+      "id": 6,
+      "documentId": "s8h6gnqt0yg75gd7gk5fxzpj",
+      "name": "Télédétection pour une agriculture intelligente",
+      "slug": "teledetection-pour-une-agriculture-intelligente",
+      "content": "<h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Presentation</strong></h1><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Well developed forests as well as cultivated plants need water and nutrients to grow. They are also sensitive to extreme weather events, diseases and predators. In this context, remote sensing can provide very useful data to identify and monitor forests and crops on a global or local scale using different spatial and temporal resolutions.</span></span></p><h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Activities</strong></h1><ul style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Radiative transfer theory application on light scattering within vegetation medium in order to simulate different optical sensors:</span></span><ul style=\"box-sizing:border-box;margin-bottom:0px;margin-top:0px;\"><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Multipsectral sensor</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Light polarization</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Full waveform LiDAR</span></span></li></ul></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Monitoring the growth of cultivated plants and trees using&nbsp;LiDAR and Optical sensorson broad of satellite</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Precision Agriculture using Multispectral and LiDAR sensonrs on broad of drones</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Satellite image resolution improvement using downscaling and pansharpening techniques</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Correction of optical images time series: gap feeling and cloudy pixel removal using Baysian approach</span></span></li></ul>",
+      "createdAt": "2025-09-11T21:42:12.107Z",
+      "updatedAt": "2025-09-11T21:52:44.389Z",
+      "publishedAt": "2025-09-11T21:52:44.411Z",
+      "locale": "fr",
+      "team_leader": {
+        "id": 33,
+        "documentId": "jw3uqrkgutrlm2dz4xb9idmc",
+        "firstName": "ahmed",
+        "lastName": "Jerbi",
+        "createdAt": "2025-08-08T09:26:32.301Z",
+        "updatedAt": "2025-09-11T21:29:16.607Z",
+        "publishedAt": "2025-09-11T21:29:16.607Z",
+        "locale": "fr",
+        "biography": "<p><span style=\"font-size:18px;\">J'ai obtenu mon HDR à l'Université de Sfax</span>, en Tunisie, en 2014. En 2007, j'ai obtenu mon doctorat en physique à l'Université Paris-Sud, en France.&nbsp;</p><ul><li>J'ai obtenu mes diplômes d'ingénieur et de master en télécommunications à Sup'Com, en Tunisie, en 2003 et 2004.</li><li>J'ai effectué un post-doctorat au LSCE, en France, et à l'Observatoire de Tartu, en Estonie, en 2008 et 2009 respectivement. Je suis actuellement chercheur senior en télédétection au Centre de Recherche Numérique de Sfax, en Tunisie, et je dirige notamment l'équipe «&nbsp;Télédétection pour l'Agriculture Intelligente&nbsp;».</li><li>Je m'intéresse à la modélisation du transfert radiatif au sein du couvert végétal&nbsp;: modèles directs et inverses.</li></ul>",
+        "email": "ahmedjerbi86@gmail.com",
+        "phone_number": 27262131,
+        "user_name": "ahmed jerbi",
+        "slug": "ahmed-jerbi",
+        "rank": 1
+      },
+      "members": [
+        {
+          "id": 18,
+          "documentId": "seyd32hdy5zyk41aep5vilko",
+          "firstName": "nadia",
+          "lastName": "chaker",
+          "createdAt": "2025-08-21T20:31:06.822Z",
+          "updatedAt": "2025-08-28T10:54:10.115Z",
+          "publishedAt": "2025-08-28T10:54:10.115Z",
+          "locale": "fr",
+          "biography": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(100,100,100);font-family:Roboto;font-size:18px;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:300;letter-spacing:normal;orphans:2;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">Après avoir terminé mes études secondaires, j’ai commencé mon diplôme d’ingénieur et ma maîtrise en informatique à l’Institut de technologie du Cambodge, à Phnom Penh, au Cambodge. Pendant mes deux dernières années là-bas, je me suis principalement concentré sur un modèle de correction des fautes d’orthographe pour un document historique (Sleuk-Rith) qui a été écrit dans la langue Khmer ancienne pendant la période du moyen âge (du 14ème au début du 18ème siècle). Ce travail a accru mon intérêt pour la correction des fautes d’orthographe et le traitement du langage naturel, ce qui m’a amené à poursuivre mon doctorat sur le sujet suivant : “Modèle de correction des fautes d’orthographe en khmer avec une approche d’apprentissage profond pour améliorer la précision de la frappe en khmer dans un contexte éducatif”. J’espère que ce travail deviendra un élément important pour les autres études de recherche connexes.</span></span></p>",
+          "email": "nadiachaker@mail.com",
+          "phone_number": 27262131,
+          "user_name": "nadiaChaker",
+          "slug": "nadia-chaker",
+          "rank": 2
+        },
+        {
+          "id": 39,
+          "documentId": "ezrx6ocvfx1g3mnimu0df0m1",
+          "firstName": "youssef",
+          "lastName": "dhieb",
+          "createdAt": "2025-09-11T21:32:30.371Z",
+          "updatedAt": "2025-09-11T21:33:02.261Z",
+          "publishedAt": "2025-09-11T21:32:30.398Z",
+          "locale": "fr",
+          "biography": null,
+          "email": "youssef.dhieb@email.com",
+          "phone_number": 94374393,
+          "user_name": "youssefDhieb",
+          "slug": "youssef-dhieb",
+          "rank": 3
+        }
+      ],
+      "projects": [
+        {
+          "id": 13,
+          "documentId": "k1v7emtjh30k6q884dr3dhw2",
+          "name": "Suivi de la croissance des oliviers par télédétection LiDAR",
+          "slug": "suivi-de-la-croissance-des-oliviers-par-teledetection-li-dar",
+          "content": "<p style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(128, 128, 128);font-family:Andika;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:500;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\"><strong style=\"box-sizing:border-box;font-weight:bolder;\">Stochastic inversion of DART simulator model</strong></span></span></p><p style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(128, 128, 128);font-family:Andika;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:500;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Laser remote sensing named LiDAR, acronym of light detection and ranging, is a remote sensing technology using optical measures allowing the analysis of the beams backscattered in the sensor direction. The major advantage of the LiDAR is its capability to sound at high sampling rate the foliage density vertical profile, with an important penetration depth encompassing the Radar system performances. In this work, we propose to use the LiDAR to estimate the olive structure in the Sfax region. It will be therefore possible to monitor the growth, the productivity as well as the behavior of the different species in face of the climate change.</span></span></p><p style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(128, 128, 128);font-family:Andika;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:500;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">The work is composed of three axes:</span></span></p><ul style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(128, 128, 128);font-family:Andika;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:500;letter-spacing:normal;margin-bottom:1rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">LiDAR signal modeling taking into account the laser light polarization, the proposed solution will be integrated on the 3-D radiative transfer model DART simulator,</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Inversion of the proposed model in order to estimate the tree properties,</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Propose a pre-processing technique to deconvolve the LiDAR signal.</span></span></li></ul>",
+          "createdAt": "2025-09-11T22:08:58.961Z",
+          "updatedAt": "2025-09-11T22:08:58.961Z",
+          "publishedAt": "2025-09-11T22:08:58.971Z",
+          "locale": "fr"
+        }
+      ],
+      "localizations": [
+        {
+          "id": 4,
+          "documentId": "s8h6gnqt0yg75gd7gk5fxzpj",
+          "name": "Remote Sensing for Smart Agriculture",
+          "slug": "remote-sensing-for-smart-agriculture",
+          "content": "<h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Presentation</strong></h1><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Well developed forests as well as cultivated plants need water and nutrients to grow. They are also sensitive to extreme weather events, diseases and predators. In this context, remote sensing can provide very useful data to identify and monitor forests and crops on a global or local scale using different spatial and temporal resolutions.</span></span></p><h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Activities</strong></h1><ul style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Radiative transfer theory application on light scattering within vegetation medium in order to simulate different optical sensors:</span></span><ul style=\"box-sizing:border-box;margin-bottom:0px;margin-top:0px;\"><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Multipsectral sensor</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Light polarization</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Full waveform LiDAR</span></span></li></ul></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Monitoring the growth of cultivated plants and trees using&nbsp;LiDAR and Optical sensorson broad of satellite</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Precision Agriculture using Multispectral and LiDAR sensonrs on broad of drones</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Satellite image resolution improvement using downscaling and pansharpening techniques</span></span></li><li style=\"box-sizing:border-box;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Correction of optical images time series: gap feeling and cloudy pixel removal using Baysian approach</span></span></li></ul>",
+          "createdAt": "2025-09-11T21:49:32.402Z",
+          "updatedAt": "2025-09-11T21:49:32.402Z",
+          "publishedAt": "2025-09-11T21:49:32.417Z",
+          "locale": "en"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "documentId": "vlu4yxod3f3f5q8v1hbxxj5x",
+      "name": "DeepVision",
+      "slug": "deep-vision",
+      "content": "<h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Presentation</strong></h1><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">The team is dedicated to automatically understanding multimedia data (images, video, digital documents) using deep learning techniques. We focus on acquisition, indexing, modeling, classification or automatic content recognition.</span></span></p><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Skills: &nbsp;image processing (segmentation, feature extraction), machine learning and pattern recognition (connectionist, statistical and structural approaches), information fusion.</span></span></p><h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Activities</strong></h1><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Working across disciplines of AI, Machine Learning and pattern recognition. With a team specialising in machine learning, deep learning, computer vision, data science and software, our team brings together a diverse set of skills to solve problems in these areas and build robust solutions.</span></span></p>",
+      "createdAt": "2025-09-11T21:56:58.149Z",
+      "updatedAt": "2025-09-11T21:56:58.149Z",
+      "publishedAt": "2025-09-11T21:56:58.167Z",
+      "locale": "fr",
+      "team_leader": {
+        "id": 29,
+        "documentId": "vxswkahk9fl0p7idyjkrt4qu",
+        "firstName": "mourad",
+        "lastName": "fakhfakh",
+        "createdAt": "2025-08-26T01:42:25.775Z",
+        "updatedAt": "2025-09-11T21:29:16.538Z",
+        "publishedAt": "2025-09-11T21:29:16.538Z",
+        "locale": "fr",
+        "biography": "<p>I received the HDR degree from the Sfax University, Tunisia, in 2014. In 2007, I obtained the Ph.D. degree in physics from the Paris-Sud University, France. I got the engineering and M.S. degrees in telecoms from Sup'Com, Tunisia, in 2003 and 2004. I was a post doc scientist at LSCE, France and Tartu Observatory, Estonia, in 2008 and 2009, respectively. I am currently a senior researcher of remote sensing at Digital Research Centre of Sfax, Tunisia, particularly I am the head of the team Remote Sensing for Smart Agriculture. I am interesting to radiative transfer modeling within vegetation cover: forward and inverse models.</p>",
+        "email": "mouardfakhfakh@gmail.com",
+        "phone_number": 27262131,
+        "user_name": "mourad fakhfakh",
+        "slug": "mourad-fakhfakh",
+        "rank": 0
+      },
+      "members": [
+        {
+          "id": 35,
+          "documentId": "beb2j50mu4e6iyujsmtl3uoj",
+          "firstName": "helmi",
+          "lastName": "aloui",
+          "createdAt": "2025-09-11T21:28:03.961Z",
+          "updatedAt": "2025-09-11T21:29:16.677Z",
+          "publishedAt": "2025-09-11T21:29:16.677Z",
+          "locale": "fr",
+          "biography": null,
+          "email": "helmi.aloui@email.com",
+          "phone_number": 23583483,
+          "user_name": "helmiAloui",
+          "slug": "helmi-aloui",
+          "rank": 2
+        },
+        {
+          "id": 29,
+          "documentId": "vxswkahk9fl0p7idyjkrt4qu",
+          "firstName": "mourad",
+          "lastName": "fakhfakh",
+          "createdAt": "2025-08-26T01:42:25.775Z",
+          "updatedAt": "2025-09-11T21:29:16.538Z",
+          "publishedAt": "2025-09-11T21:29:16.538Z",
+          "locale": "fr",
+          "biography": "<p>I received the HDR degree from the Sfax University, Tunisia, in 2014. In 2007, I obtained the Ph.D. degree in physics from the Paris-Sud University, France. I got the engineering and M.S. degrees in telecoms from Sup'Com, Tunisia, in 2003 and 2004. I was a post doc scientist at LSCE, France and Tartu Observatory, Estonia, in 2008 and 2009, respectively. I am currently a senior researcher of remote sensing at Digital Research Centre of Sfax, Tunisia, particularly I am the head of the team Remote Sensing for Smart Agriculture. I am interesting to radiative transfer modeling within vegetation cover: forward and inverse models.</p>",
+          "email": "mouardfakhfakh@gmail.com",
+          "phone_number": 27262131,
+          "user_name": "mourad fakhfakh",
+          "slug": "mourad-fakhfakh",
+          "rank": 0
+        }
+      ],
+      "projects": [
+        {
+          "id": 4,
+          "documentId": "y8897fze3p51kq8xpfdoye8w",
+          "name": "READ: Recognition and Extraction of Information from Document Images",
+          "slug": "read-recognition-and-extraction-of-information-from-document-images",
+          "content": "<p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\" dir=\"ltr\">The objective of this project is to develop a system for extracting relevant information (names, dates, places...) from images of digitized civil status records. The corpera is a mix of printed and handwritten documents with different formats (Birth, Marriage and Death) and different qualities (noise, quality of the writing, degradation...). We combine the techniques of OCR/ICR and NLP to extract the named entities form document images.</p><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\" dir=\"ltr\">Partner Studia company&nbsp;</p><figure class=\"image image_resized\" style=\"width:37.56%;\"><img src=\"http://localhost:1337/uploads/Project_6698fe8ced3ee_ac7d628c08.png\" alt=\"Project-6698fe8ced3ee.png\" srcset=\"http://localhost:1337/uploads/thumbnail_Project_6698fe8ced3ee_ac7d628c08.png 245w, http://localhost:1337/uploads/small_Project_6698fe8ced3ee_ac7d628c08.png 500w\" sizes=\"100vw\" width=\"500\"></figure>",
+          "createdAt": "2025-09-11T22:00:40.930Z",
+          "updatedAt": "2025-09-11T22:00:40.930Z",
+          "publishedAt": "2025-09-11T22:00:40.941Z",
+          "locale": "fr"
+        },
+        {
+          "id": 6,
+          "documentId": "gfbngykkcuc7myc7vtlhcmum",
+          "name": "SmartSURV: Vidéo Protection Urbaine dans les villes intelligentes",
+          "slug": "smart-surv-video-protection-urbaine-dans-les-villes-intelligentes",
+          "content": "<p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\" dir=\"ltr\">Intelligent video surveillance of urban areas by means of artificial vision is a real challenge in smart cities. It consists in exploiting the images from one or more cameras to extract an interpretation that allows to diagnose a situation and to report it. The SmartSURV project aims to develop an intelligent video protection platform to improve security in urban areas. The platform automatically analyzes a huge amount of multimedia data to combat risky road behaviors such as speeding or traffic light violations, provide parking surveillance and access control to combat threats such as vehicle theft, assaults and violence.&nbsp;</p><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\" dir=\"ltr\">PEJC project,&nbsp;financed by Tunisian ministry of higher education and scientific research&nbsp;</p><p><br>&nbsp;</p><figure class=\"image\"><img alt=\"Project-6698fe59146fd.png\" src=\"http://localhost:1337/uploads/Project_6698fe59146fd_3d40de56ae.png\" srcset=\"http://localhost:1337/uploads/thumbnail_Project_6698fe59146fd_3d40de56ae.png 245w, http://localhost:1337/uploads/small_Project_6698fe59146fd_3d40de56ae.png 500w\" sizes=\"100vw\" width=\"500\"></figure>",
+          "createdAt": "2025-09-11T22:02:11.682Z",
+          "updatedAt": "2025-09-11T22:02:11.682Z",
+          "publishedAt": "2025-09-11T22:02:11.691Z",
+          "locale": "fr"
+        }
+      ],
+      "localizations": [
+        {
+          "id": 10,
+          "documentId": "vlu4yxod3f3f5q8v1hbxxj5x",
+          "name": "DeepVision",
+          "slug": "deep-vision",
+          "content": "<h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Presentation</strong></h1><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">The team is dedicated to automatically understanding multimedia data (images, video, digital documents) using deep learning techniques. We focus on acquisition, indexing, modeling, classification or automatic content recognition.</span></span></p><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Skills: &nbsp;image processing (segmentation, feature extraction), machine learning and pattern recognition (connectionist, statistical and structural approaches), information fusion.</span></span></p><h1 class=\"main-title\" style=\"-webkit-text-stroke-width:0px;background-color:rgb(248, 249, 253);box-sizing:border-box;color:rgb(0, 0, 0);font-family:Lato, Arial, sans-serif;font-size:24px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;line-height:1.5;margin-bottom:0.5rem;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\"><strong>Activities</strong></h1><p style=\"box-sizing:border-box;margin-bottom:1rem;margin-top:0px;\"><span style=\"color:rgb(0,0,0);font-family:Verdana, Geneva, sans-serif;font-size:14px;\"><span style=\"box-sizing:border-box;\">Working across disciplines of AI, Machine Learning and pattern recognition. With a team specialising in machine learning, deep learning, computer vision, data science and software, our team brings together a diverse set of skills to solve problems in these areas and build robust solutions.</span></span></p>",
+          "createdAt": "2025-09-11T21:57:44.405Z",
+          "updatedAt": "2025-09-11T21:57:44.405Z",
+          "publishedAt": "2025-09-11T21:57:44.416Z",
+          "locale": "en"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 2
+    }
+  }
+}

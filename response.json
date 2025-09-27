@@ -1,0 +1,121 @@
+{
+    "data": {
+        "id": 8,
+        "documentId": "grglmyy1dneoutozk2oqmauh",
+        "name": "Laboratoires des Systèmes Electroniques Avancés et de l’Energie Durable",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae",
+        "createdAt": "2025-06-27T00:07:50.527Z",
+        "updatedAt": "2025-09-15T04:35:35.939Z",
+        "publishedAt": "2025-09-15T04:34:50.205Z",
+        "locale": "fr",
+        "localizations": [
+            {
+                "id": 9,
+                "documentId": "grglmyy1dneoutozk2oqmauh",
+                "name": "Advanced Electronic Systems and Sustainable Energy Laboratories",
+                "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae",
+                "createdAt": "2025-06-27T00:08:14.252Z",
+                "updatedAt": "2025-09-15T04:35:35.907Z",
+                "publishedAt": "2025-09-15T04:35:35.927Z",
+                "locale": "en",
+                "background": [
+                    {
+                        "id": 23,
+                        "documentId": "pbubq0ctaac4e8jojqh2c0u4",
+                        "name": "background-ecole-.png",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 1152,
+                        "height": 767,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_background-ecole-.png",
+                                "hash": "thumbnail_background_ecole_95e1059c50",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "path": null,
+                                "width": 234,
+                                "height": 156,
+                                "size": 72.54,
+                                "sizeInBytes": 72538,
+                                "url": "/uploads/thumbnail_background_ecole_95e1059c50.png"
+                            },
+                            "small": {
+                                "name": "small_background-ecole-.png",
+                                "hash": "small_background_ecole_95e1059c50",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "path": null,
+                                "width": 500,
+                                "height": 333,
+                                "size": 261.55,
+                                "sizeInBytes": 261547,
+                                "url": "/uploads/small_background_ecole_95e1059c50.png"
+                            },
+                            "medium": {
+                                "name": "medium_background-ecole-.png",
+                                "hash": "medium_background_ecole_95e1059c50",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "path": null,
+                                "width": 750,
+                                "height": 499,
+                                "size": 544.26,
+                                "sizeInBytes": 544256,
+                                "url": "/uploads/medium_background_ecole_95e1059c50.png"
+                            },
+                            "large": {
+                                "name": "large_background-ecole-.png",
+                                "hash": "large_background_ecole_95e1059c50",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "path": null,
+                                "width": 1000,
+                                "height": 666,
+                                "size": 932.28,
+                                "sizeInBytes": 932276,
+                                "url": "/uploads/large_background_ecole_95e1059c50.png"
+                            }
+                        },
+                        "hash": "background_ecole_95e1059c50",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 243.47,
+                        "url": "/uploads/background_ecole_95e1059c50.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "createdAt": "2025-09-15T04:19:06.924Z",
+                        "updatedAt": "2025-09-15T04:19:06.924Z",
+                        "publishedAt": "2025-09-15T04:19:06.925Z"
+                    }
+                ],
+                "firstButton": {
+                    "id": 539,
+                    "text": "Meet the members",
+                    "URL": "/members",
+                    "target": null
+                },
+                "secondButton": {
+                    "id": 540,
+                    "text": "Discover our projects",
+                    "URL": "/projects",
+                    "target": null
+                },
+                "localizations": [
+                    {
+                        "id": 8,
+                        "documentId": "grglmyy1dneoutozk2oqmauh",
+                        "name": "Laboratoires des Systèmes Electroniques Avancés et de l’Energie Durable",
+                        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae",
+                        "createdAt": "2025-06-27T00:07:50.527Z",
+                        "updatedAt": "2025-09-15T04:35:35.939Z",
+                        "publishedAt": "2025-09-15T04:34:50.205Z",
+                        "locale": "fr"
+                    }
+                ]
+            }
+        ]
+    },
+    "meta": {}
+}
