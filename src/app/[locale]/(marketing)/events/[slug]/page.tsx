@@ -9,12 +9,13 @@ type EventsPageParams = {
   slug: string;
 };
 
-type EventsPageProps = {
-  params: EventsPageParams;
-};
+interface EventsPageProps {
+  // TS trick to satisfy Next's PageProps constraint (params: Promise<any>)
+  params: Promise<EventsPageParams>;
+}
 
 export default async function EventsPage({ params }: EventsPageProps) {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
 
   const event: Event | null = await fetchEventBySlug(slug, locale);
 
@@ -32,7 +33,7 @@ export default async function EventsPage({ params }: EventsPageProps) {
 export async function generateMetadata(
   { params }: EventsPageProps
 ): Promise<Metadata> {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
   const event = await fetchEventBySlug(slug, locale);
 
   if (!event) {
