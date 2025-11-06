@@ -4,16 +4,16 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Event } from "@/types/types";
 
-interface EventPageParams {
+type EventsPageParams = {
   locale: string;
   slug: string;
-}
+};
 
-interface EventPageProps {
-  params: EventPageParams;
-}
+type EventsPageProps = {
+  params: EventsPageParams;
+};
 
-export default async function EventPage({ params }: EventPageProps) {
+export default async function EventsPage({ params }: EventsPageProps) {
   const { locale, slug } = params;
 
   const event: Event | null = await fetchEventBySlug(slug, locale);
@@ -30,7 +30,7 @@ export default async function EventPage({ params }: EventPageProps) {
 }
 
 export async function generateMetadata(
-  { params }: EventPageProps
+  { params }: EventsPageProps
 ): Promise<Metadata> {
   const { locale, slug } = params;
   const event = await fetchEventBySlug(slug, locale);
