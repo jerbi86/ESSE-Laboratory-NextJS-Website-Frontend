@@ -1,14 +1,20 @@
 import fetchEventBySlug from "@/lib/strapi/fetchEventBySlug";
-import EventDetail from '@/components/events/EventDetail';
-import { notFound } from 'next/navigation';
-import { Event } from '@/types/types';
+import EventDetail from "@/components/events/EventDetail";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { Event } from "@/types/types";
+
+interface EventPageParams {
+  locale: string;
+  slug: string;
+}
 
 interface EventPageProps {
-  params: { locale: string; slug: string };
+  params: EventPageParams;
 }
 
 export default async function EventPage({ params }: EventPageProps) {
-  const { locale, slug } = await params;
+  const { locale, slug } = params;
 
   const event: Event | null = await fetchEventBySlug(slug, locale);
 
@@ -23,18 +29,22 @@ export default async function EventPage({ params }: EventPageProps) {
   );
 }
 
-export async function generateMetadata({ params }: EventPageProps) {
-  const { locale, slug } = await params;
+export async function generateMetadata(
+  { params }: EventPageProps
+): Promise<Metadata> {
+  const { locale, slug } = params;
   const event = await fetchEventBySlug(slug, locale);
 
   if (!event) {
     return {
-      title: 'Event Not Found',
+      title: "Event Not Found",
     };
   }
 
   return {
     title: event.title,
-    description: event.content ? event.content.replace(/<[^>]*>/g, '').substring(0, 160) : '',
+    description: event.content
+      ? event.content.replace(/<[^>]*>/g, "").substring(0, 160)
+      : "",
   };
 }
