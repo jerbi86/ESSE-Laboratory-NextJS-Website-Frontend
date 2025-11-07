@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import React from "react";
 
 import type { Metadata } from "next";
@@ -10,7 +8,6 @@ import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { CartProvider } from "@/context/cart-context";
 import { cn } from "@/lib/utils";
-import { ViewTransitions } from "next-view-transitions";
 import fetchContentType from "@/lib/strapi/fetchContentType";
 
 const inter = Inter({
@@ -19,14 +16,10 @@ const inter = Inter({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-// Default Global SEO for pages without them
-export async function generateMetadata({
-  params,
-}: {
-  // Next is actually giving you params as a plain object, not a Promise
-  params: { lang?: "fr" | "en"; locale?: string };
-}): Promise<Metadata> {
-  const locale = params.locale ?? params.lang ?? "en";
+// Default Global SEO for pages without their own metadata
+export async function generateMetadata(): Promise<Metadata> {
+  // If you later move this to a [locale]/layout.tsx, you can use params.locale here
+  const locale = "en";
 
   const pageData = await fetchContentType(
     "global",
@@ -38,18 +31,16 @@ export async function generateMetadata({
   );
 
   const seo = pageData?.seo;
-  const metadata = generateMetadataObject(seo);
-  return metadata;
+  return generateMetadataObject(seo);
 }
 
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { lang?: "fr" | "en"; locale?: string };
 }) {
-  const locale = params.locale ?? params.lang ?? "en";
+  // Same note as above: for per-locale navbar/footer, this typically lives in app/[locale]/layout.tsx
+  const locale = "en";
 
   const pageData = await fetchContentType(
     "global",
@@ -59,20 +50,18 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <ViewTransitions>
+      <body
+        className={cn(
+          inter.className,
+          "bg-charcoal antialiased h-full w-full"
+        )}
+      >
         <CartProvider>
-          <body
-            className={cn(
-              inter.className,
-              "bg-charcoal antialiased h-full w-full"
-            )}
-          >
-            <Navbar data={pageData.navbar} locale={locale} />
-            {children}
-            <Footer data={pageData.footer} locale={locale} />
-          </body>
+          <Navbar data={pageData.navbar} locale={locale} />
+          {children}
+          <Footer data={pageData.footer} locale={locale} />
         </CartProvider>
-      </ViewTransitions>
+      </body>
     </html>
   );
 }
