@@ -1,12 +1,19 @@
-import { notFound } from 'next/navigation';
-import ClientSlugHandler from '../../ClientSlugHandler';
-import Hero from '@/components/Hero';
-import MemberDetail from '@/components/members/MemberDetail';
-import { fetchMemberBySlug } from '@/lib/strapi/fetchMemberBySlug';
-import { MemberProfile } from '@/types/types';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import ClientSlugHandler from "../../ClientSlugHandler";
+import Hero from "@/components/Hero";
+import MemberDetail from "@/components/members/MemberDetail";
+import { fetchMemberBySlug } from "@/lib/strapi/fetchMemberBySlug";
+import { MemberProfile } from "@/types/types";
+
+type MemberPageParams = {
+  locale: string;
+  slug: string;
+};
 
 interface MemberPageProps {
-  params: { locale: string; slug: string };
+  // Satisfy Next's PageProps constraint (params: Promise<any>)
+  params: Promise<MemberPageParams>;
 }
 
 export default async function MemberPage({ params }: MemberPageProps) {
@@ -15,13 +22,17 @@ export default async function MemberPage({ params }: MemberPageProps) {
   const member: MemberProfile | null = await fetchMemberBySlug(slug, locale);
   if (!member) return notFound();
 
-  const localizedSlugs = (member.localizations || []).reduce((acc: Record<string, string>, loc) => {
-    acc[loc.locale] = loc.slug;
-    return acc;
-  }, { [locale]: slug });
+  const localizedSlugs = (member.localizations || []).reduce(
+    (acc: Record<string, string>, loc) => {
+      acc[loc.locale] = loc.slug;
+      return acc;
+    },
+    { [locale]: slug }
+  );
 
   const fullName = `${member.firstName} ${member.lastName}`.trim();
-  const subtitle = member.members_roles?.map(r => r.name).join(' • ') || undefined;
+  const subtitle =
+    member.members_roles?.map((r) => r.name).join(" • ") || undefined;
 
   return (
     <main className="min-h-screen">
@@ -36,21 +47,30 @@ export default async function MemberPage({ params }: MemberPageProps) {
   );
 }
 
-export async function generateMetadata({ params }: MemberPageProps) {
+export async function generateMetadata(
+  { params }: MemberPageProps
+): Promise<Metadata> {
   const { locale, slug } = await params;
   const member = await fetchMemberBySlug(slug, locale);
+
   if (!member) {
-    return { title: locale === 'en' ? 'Member not found' : 'Membre introuvable' };
+    return {
+      title: locale === "en" ? "Member not found" : "Membre introuvable",
+    };
   }
+
   const fullName = `${member.firstName} ${member.lastName}`.trim();
-  const description = member.members_roles?.map(r => r.name).join(' • ');
+  const description = member.members_roles
+    ?.map((r) => r.name)
+    .join(" • ");
+
   return {
     title: fullName,
     description,
     openGraph: {
       title: fullName,
       description,
-      images: member.image?.url ? [member.image.url] : []
-    }
+      images: member.image?.url ? [member.image.url] : [],
+    },
   };
 }

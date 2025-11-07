@@ -1,12 +1,19 @@
-import { notFound } from 'next/navigation';
-import fetchTeamBySlug from '@/lib/strapi/fetchTeamBySlug';
-import { ResearchTeam } from '@/types/types';
-import TeamDetail from '@/components/teams/TeamDetail';
-import Hero from '@/components/Hero';
-import ClientSlugHandler from '../../ClientSlugHandler';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import fetchTeamBySlug from "@/lib/strapi/fetchTeamBySlug";
+import { ResearchTeam } from "@/types/types";
+import TeamDetail from "@/components/teams/TeamDetail";
+import Hero from "@/components/Hero";
+import ClientSlugHandler from "../../ClientSlugHandler";
+
+type TeamPageParams = {
+  locale: string;
+  slug: string;
+};
 
 interface TeamPageProps {
-  params: { locale: string; slug: string };
+  // Match Next's PageProps constraint
+  params: Promise<TeamPageParams>;
 }
 
 export default async function TeamPage({ params }: TeamPageProps) {
@@ -17,12 +24,14 @@ export default async function TeamPage({ params }: TeamPageProps) {
     notFound();
   }
 
-  // Créer les slugs localisés pour le ClientSlugHandler
   const localizedSlugs =
-    team.localizations?.reduce((acc: Record<string, string>, localization: any) => {
-      acc[localization.locale] = localization.slug;
-      return acc;
-    }, { [locale]: slug }) || { [locale]: slug };
+    team.localizations?.reduce(
+      (acc: Record<string, string>, localization: any) => {
+        acc[localization.locale] = localization.slug;
+        return acc;
+      },
+      { [locale]: slug }
+    ) || { [locale]: slug };
 
   return (
     <main className="min-h-screen">
@@ -33,16 +42,22 @@ export default async function TeamPage({ params }: TeamPageProps) {
   );
 }
 
-export async function generateMetadata({ params }: TeamPageProps) {
+export async function generateMetadata(
+  { params }: TeamPageProps
+): Promise<Metadata> {
   const { locale, slug } = await params;
   const team = await fetchTeamBySlug(slug, locale);
 
   if (!team) {
-    return { title: 'Team Not Found' } as any;
+    return {
+      title: locale === "en" ? "Team Not Found" : "Équipe introuvable",
+    };
   }
 
   return {
     title: team.name,
-    description: team.content ? team.content.replace(/<[^>]*>/g, '').substring(0, 160) : '',
-  } as any;
+    description: team.content
+      ? team.content.replace(/<[^>]*>/g, "").substring(0, 160)
+      : "",
+  };
 }

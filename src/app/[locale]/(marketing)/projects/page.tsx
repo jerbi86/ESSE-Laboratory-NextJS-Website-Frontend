@@ -1,21 +1,26 @@
-import fetchContentType from '@/lib/strapi/fetchContentType';
-import Hero from '@/components/Hero';
-import ProjectsList from '@/components/projects/ProjectsList';
-import ClientSlugHandler from '../ClientSlugHandler';
-import { Project } from '@/types/types';
+import fetchContentType from "@/lib/strapi/fetchContentType";
+import Hero from "@/components/Hero";
+import ProjectsList from "@/components/projects/ProjectsList";
+import ClientSlugHandler from "../ClientSlugHandler";
+import { Project } from "@/types/types";
+
+type ProjectsIndexParams = {
+  locale: string;
+};
 
 interface ProjectsIndexProps {
-  params: { locale: string };
+  // Match Next's PageProps constraint
+  params: Promise<ProjectsIndexParams>;
 }
 
 export default async function ProjectsIndex({ params }: ProjectsIndexProps) {
   const { locale } = await params;
 
-  const res = await fetchContentType('projects', {
+  const res = await fetchContentType("projects", {
     populate: {
-      project_manager: { populate: '*' },
-      research_team: { populate: '*' },
-      localizations: { populate: '*' }
+      project_manager: { populate: "*" },
+      research_team: { populate: "*" },
+      localizations: { populate: "*" },
     },
     locale,
     pagination: { page: 1, pageSize: 500 },
@@ -23,15 +28,16 @@ export default async function ProjectsIndex({ params }: ProjectsIndexProps) {
 
   const projects: Project[] = res?.data || [];
 
-  const texts = locale === 'en'
-    ? { title: 'Projects', subtitle: 'Discover our research projects' }
-    : { title: 'Projets', subtitle: 'Découvrez nos projets de recherche' };
+  const texts =
+    locale === "en"
+      ? { title: "Projects", subtitle: "Discover our research projects" }
+      : { title: "Projets", subtitle: "Découvrez nos projets de recherche" };
 
   return (
     <main className="min-h-screen">
-      <ClientSlugHandler localizedSlugs={{ en: 'projects', fr: 'projects' }} />
+      <ClientSlugHandler localizedSlugs={{ en: "projects", fr: "projects" }} />
       <Hero title={texts.title} description={texts.subtitle} size="lg" />
-      <ProjectsList projects={projects as any} locale={locale} />
+      <ProjectsList projects={projects} locale={locale} />
     </main>
   );
 }
