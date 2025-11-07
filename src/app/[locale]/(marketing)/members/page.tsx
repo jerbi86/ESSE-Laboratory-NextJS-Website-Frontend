@@ -10,10 +10,14 @@ type MembersIndexParams = {
   locale: string;
 };
 
+type MembersIndexSearchParams = {
+  page?: string;
+};
+
 interface MembersIndexProps {
   // Match Next's PageProps constraint
   params: Promise<MembersIndexParams>;
-  searchParams?: { page?: string };
+  searchParams?: Promise<MembersIndexSearchParams>;
 }
 
 export default async function MembersIndex({
@@ -21,7 +25,8 @@ export default async function MembersIndex({
   searchParams,
 }: MembersIndexProps) {
   const { locale } = await params;
-  const currentPage = parseInt(searchParams?.page || "1", 10);
+  const resolvedSearch = searchParams ? await searchParams : {};
+  const currentPage = parseInt(resolvedSearch.page || "1", 10);
   const pageSize = 12;
 
   const res = await fetchContentType("user-profiles", {
@@ -84,9 +89,13 @@ export default async function MembersIndex({
 }
 
 export async function generateMetadata(
-  { params }: MembersIndexProps
+  { params, searchParams }: MembersIndexProps
 ): Promise<Metadata> {
   const { locale } = await params;
+  const resolvedSearch = searchParams ? await searchParams : {};
+  // You don't really need the page here, but this keeps the signature consistent
+  void resolvedSearch;
+
   const title = locale === "en" ? "Members" : "Membres";
   const description =
     locale === "en"

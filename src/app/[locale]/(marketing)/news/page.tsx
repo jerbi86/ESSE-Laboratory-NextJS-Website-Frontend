@@ -12,12 +12,14 @@ type NewsIndexParams = {
   locale: string;
 };
 
+type NewsIndexSearchParams = {
+  page?: string;
+};
+
 interface NewsIndexProps {
-  // Match PageProps constraint
+  // Match Next's PageProps constraint
   params: Promise<NewsIndexParams>;
-  searchParams?: {
-    page?: string;
-  };
+  searchParams?: Promise<NewsIndexSearchParams>;
 }
 
 export default async function NewsIndex({
@@ -25,7 +27,8 @@ export default async function NewsIndex({
   searchParams,
 }: NewsIndexProps) {
   const { locale } = await params;
-  const currentPage = parseInt(searchParams?.page || "1", 10);
+  const resolvedSearch = searchParams ? await searchParams : {};
+  const currentPage = parseInt(resolvedSearch.page || "1", 10);
   const articlesPerPage = 9; // 3x3 grid
 
   const articlesResponse = await fetchContentType("articles", {
@@ -91,8 +94,10 @@ export default async function NewsIndex({
         }}
       />
 
+      {/* Hero Section */}
       <Hero title={texts.title} description={texts.subtitle} size="lg" />
 
+      {/* Articles Section */}
       <section className="container mx-auto py-12 max-w-6xl px-4">
         {articles.length === 0 ? (
           <div className="text-center py-12">
@@ -107,13 +112,12 @@ export default async function NewsIndex({
                 <article key={article.slug} className="group">
                   <Link href={`/${locale}/news/${article.slug}`} className="block">
                     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-200 group-hover:scale-105">
+                      {/* Article image */}
                       {article.image && (
                         <div className="relative w-full h-48">
                           <Image
                             src={`${process.env.NEXT_PUBLIC_API_URL}${article.image.url}`}
-                            alt={
-                              article.image.alternativeText || article.title
-                            }
+                            alt={article.image.alternativeText || article.title}
                             fill
                             className="object-cover"
                           />
@@ -121,31 +125,28 @@ export default async function NewsIndex({
                       )}
 
                       <div className="p-6">
-                        {article.categories &&
-                          article.categories.length > 0 && (
-                            <div className="flex flex-wrap gap-2 mb-3">
-                              {article.categories
-                                .slice(0, 2)
-                                .map((category, index) => (
-                                  <Badge
-                                    key={index}
-                                    variant="secondary"
-                                    className="text-xs"
-                                  >
-                                    {category.name}
-                                  </Badge>
-                                ))}
-                            </div>
-                          )}
+                        {/* Categories */}
+                        {article.categories && article.categories.length > 0 && (
+                          <div className="flex flex-wrap gap-2 mb-3">
+                            {article.categories.slice(0, 2).map((category, index) => (
+                              <Badge key={index} variant="secondary" className="text-xs">
+                                {category.name}
+                              </Badge>
+                            ))}
+                          </div>
+                        )}
 
+                        {/* Title */}
                         <h2 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                           {article.title}
                         </h2>
 
+                        {/* Description */}
                         <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                           {article.description}
                         </p>
 
+                        {/* Published date */}
                         <time
                           dateTime={article.publishedAt}
                           className="text-sm text-gray-500 dark:text-gray-400"
@@ -159,6 +160,7 @@ export default async function NewsIndex({
               ))}
             </div>
 
+            {/* Pagination */}
             <NewsPagination
               currentPage={pagination.page}
               totalPages={pagination.pageCount}
@@ -173,9 +175,11 @@ export default async function NewsIndex({
 }
 
 export async function generateMetadata(
-  { params }: NewsIndexProps
+  { params, searchParams }: NewsIndexProps
 ): Promise<Metadata> {
   const { locale } = await params;
+  const resolvedSearch = searchParams ? await searchParams : {};
+  void resolvedSearch; // not used but keeps signature aligned
 
   const getMetadata = (locale: string) => {
     return locale === "en"
