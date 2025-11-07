@@ -1,20 +1,21 @@
 import { cn } from "@/lib/utils";
-import { AnimationProps, MotionProps } from "framer-motion";
+import type { MotionProps } from "framer-motion";
 import React from "react";
 import Balancer from "react-wrap-balancer";
+
+type SubheadingProps = {
+  className?: string;
+  as?: React.ElementType;
+  children: React.ReactNode;
+} & MotionProps &
+  React.HTMLAttributes<HTMLHeadingElement>;
 
 export const Subheading = ({
   className,
   as: Tag = "h2",
   children,
   ...props
-}: {
-  className?: string;
-  as?: any;
-  children: any;
-  props?: React.HTMLAttributes<HTMLHeadingElement | AnimationProps>;
-} & MotionProps &
-  React.HTMLAttributes<HTMLHeadingElement | AnimationProps>) => {
+}: SubheadingProps) => {
   return (
     <Tag
       className={cn(
@@ -22,6 +23,7 @@ export const Subheading = ({
         "text-muted text-center font-normal",
         className
       )}
+      {...props}
     >
       <Balancer>{children}</Balancer>
     </Tag>
